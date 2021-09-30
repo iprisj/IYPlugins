@@ -22,6 +22,7 @@ Plugin.Functions:AddCommand("enablenotify", "enablenotify / unremovenotify",  "E
 end)
 Plugin.Functions:AddCommand("disablenotify", "disablenotify / nonotify",  "Disables notify.", {"nonotify","removenotify"}, function(args,speaker) 
 	notify = customNotify
+	currentSetting = "none"
 end)
 Plugin.Functions:AddCommand("printnotify", "printnotify / pnotify",  "Changes notifies into prints.", {"pnotify"}, function(args,speaker) 
 	notify = customNotify
